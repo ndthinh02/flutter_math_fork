@@ -245,7 +245,7 @@ class Math extends StatelessWidget {
   }) {
     final ast = this.ast;
     if (ast == null || parseError != null) {
-      return BreakResult(parts: [this], penalties: [10000]);
+      return BreakResult(parts: [this], penalties: [8000]);
     }
     final astBreakResult = ast.texBreak(
       relPenalty: relPenalty,
